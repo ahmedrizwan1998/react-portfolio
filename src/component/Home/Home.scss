@@ -1,0 +1,49 @@
+.home-page{
+    .text-zone{
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        width: 50%;
+        transform: translateY(-50%);
+    }
+    h1{
+        color: white;
+        font-size: 53px;
+        font-weight: 400;
+        font-family: 'Coolvetica';
+        margin: 0;
+
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            margin-left: 15px;
+            opacity: 0.6;
+            animation: fadeIn 1.2s 1.4s backwards;
+        }
+
+        &::after{
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            opacity: 0.6;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.6s backwards;
+        }
+        img{
+            width: 32px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        } 
+    }
+}
+
